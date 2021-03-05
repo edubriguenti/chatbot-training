@@ -145,7 +145,7 @@
     const client = new rsocketCore.RSocketClient({
         transport: new rsocketWebSocketClient(
             {
-                url: 'ws:' + window.location.host + '/rsocket',
+                url: 'wss:' + window.location.host + '/rsocket',
             },
             rsocketCore.BufferEncoders,
         ),
